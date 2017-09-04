@@ -1,4 +1,4 @@
-# node-jsonp
+# fake-jsonp
 
 A simple JSONP implementation for Node.js. Assuming your JSONP endpoint
 provides standard JSON, this will run faster and avoid the hassle + risk of
@@ -17,7 +17,7 @@ h/t @ngot for `node-json` module on which this is based
 
 returns a Promise, which resolves with `data` parameters.
 
-###Examples
+### Examples
 ```js
 	JSONP('http://twitter.com/users/oscargodson.json').then(function(json){
 	 console.log(json)
