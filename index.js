@@ -105,7 +105,7 @@ function JSONP (url, data, method) {
 
   return new Promise(function (resolve, reject) {
     request(options, function (err, res, body) {
-      if (err) throw err
+      if (err) reject(err)
       else if (res.statusCode === 200) {
         debug('body: "%j"', body)
 
